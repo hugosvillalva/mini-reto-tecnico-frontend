@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Mini Reto Técnico - Frontend
 
-## Getting Started
+Este es el frontend del Mini Reto Técnico, construido con **Next.js** y **React**. Su propósito principal es consumir la API construida en nuestro Backend (NestJS) para mostrar información de un perfil de GitHub de manera elegante y minimalista.
 
-First, run the development server:
+## 🛠 Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **[Next.js](https://nextjs.org/)** - Framework de React (usando App Router).
+- **CSS Puro (Vanilla)** - Diseño responsivo y moderno sin frameworks externos para mayor control.
+- **PNPM** - Gestor de paquetes ultrarrápido.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Instalación y Uso Local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Asegúrate de tener el Backend corriendo en tu máquina (por defecto en el puerto `3000`).
+2. Instala las dependencias del frontend:
+   ```bash
+   pnpm install
+   ```
+3. Configura tus variables de entorno creando un archivo `.env` en la raíz (si no lo tienes) y apunta a la API de tu backend:
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:3000
+   ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+   pnpm run dev
+   ```
+5. Abre [http://localhost:3001](http://localhost:3001) en tu navegador para ver la interfaz en funcionamiento.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
